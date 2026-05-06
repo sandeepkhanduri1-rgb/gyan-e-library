@@ -5,64 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GYAN E-Library</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 
 <style>
 body {
 margin: 0;
 font-family: 'Poppins', sans-serif;
-background: #0f172a;
-color: #e5e7eb;
+background: linear-gradient(135deg, #1e3a8a, #9333ea, #0ea5e9);
+color: white;
 }
 
 /* Navbar */
 nav {
 display: flex;
 justify-content: space-between;
-padding: 15px 30px;
-background: rgba(255,255,255,0.05);
-backdrop-filter: blur(10px);
-position: sticky;
-top: 0;
+padding: 20px 40px;
 }
 
-nav h2 {
-color: #facc15;
+nav h1 {
+font-size: 32px;
+font-weight: 800;
+letter-spacing: 2px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
 text-align: center;
 padding: 80px 20px;
 }
 
 .hero h1 {
-font-size: 40px;
-color: #facc15;
+font-size: 70px;
+font-weight: 800;
+background: linear-gradient(90deg, #facc15, #22c55e);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+font-size: 30px;
+margin-top: 10px;
 }
 
 .hero p {
-color: #cbd5f5;
+margin-top: 10px;
+font-size: 18px;
 }
 
-/* Button */
+/* Buttons */
 .btn {
-padding: 12px 25px;
-border-radius: 25px;
+padding: 14px 30px;
+border-radius: 30px;
 border: none;
-cursor: pointer;
-margin: 10px;
+margin: 15px;
 font-size: 16px;
+cursor: pointer;
 }
 
 .primary {
 background: #facc15;
-color: #000;
+color: black;
 }
 
 .secondary {
-background: #38bdf8;
-color: #000;
+background: #22c55e;
+color: black;
 }
 
 /* Cards */
@@ -74,36 +81,22 @@ padding: 40px;
 }
 
 .card {
-background: rgba(255,255,255,0.05);
-padding: 20px;
-border-radius: 15px;
+background: rgba(255,255,255,0.1);
+padding: 25px;
+border-radius: 20px;
 backdrop-filter: blur(10px);
+text-align: center;
 transition: 0.3s;
 }
 
 .card:hover {
-transform: translateY(-8px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+transform: scale(1.05);
 }
 
 /* Footer */
 footer {
 text-align: center;
 padding: 20px;
-background: rgba(255,255,255,0.05);
-}
-
-/* WhatsApp Floating Button */
-.whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #25D366;
-padding: 15px;
-border-radius: 50%;
-text-decoration: none;
-color: white;
-font-size: 20px;
 }
 </style>
 
@@ -112,15 +105,15 @@ font-size: 20px;
 <body>
 
 <nav>
-<h2>GYAN E-Library</h2>
-<div>
+<h1>GYAN E-LIBRARY</h1>
 <button class="btn primary">Book Seat</button>
-</div>
 </nav>
 
 <section class="hero">
-<h1>Silent Study Zone 📚</h1>
+<h1>GYAN E-LIBRARY</h1>
+<h2>📚 Silent Study Zone</h2>
 <p>Best place for focused study in Karanprayag</p>
+
 <button class="btn primary">Join Now</button>
 <button class="btn secondary">View Plans</button>
 </section>
@@ -143,10 +136,8 @@ font-size: 20px;
 </section>
 
 <footer>
-<p>© 2026 GYAN E-Library | All Rights Reserved</p>
+<p>© 2026 GYAN E-Library</p>
 </footer>
-
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
 
 </body>
 </html>
